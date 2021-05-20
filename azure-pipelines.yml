@@ -18,6 +18,7 @@ steps:
 - script: |
     npm install
     npm run build
+    sudo cp -f build-web-test-plan.jmx ./dist/
   displayName: 'npm install and build'
 
 - task: ArchiveFiles@2
